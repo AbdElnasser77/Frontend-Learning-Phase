@@ -1,0 +1,10 @@
+.main{
+    background-image: url(../imgs/823303-fun-desktop-wallpaper-1920x1080-hd.jpg) ;
+    background-size: cover;
+    background-position: 100% left bottom ;
+}
+
+p{
+    transition: all 1s ease;
+}
+
