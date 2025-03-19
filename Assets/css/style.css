@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+}
+body{
+    background: #304352;  /* fallback for old browsers */
+    background: linear-gradient(to right, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+    color: white;
+}
+.icon{
+    color: black;
+    height: 30px !important;
+    width: 30px !important;
+    background-color: white;
+    cursor: pointer;
+}
+.overlay{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.896796218487395) 4%, rgba(0, 0, 0, 0.647) 23%, rgba(0, 0, 0, 0.177) 35%, rgba(255,255,255,0) 41%);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.overlay:hover{
+    opacity: 100;
+}
+.item{
+    transition: all 0.3s;
+}
+.item:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
