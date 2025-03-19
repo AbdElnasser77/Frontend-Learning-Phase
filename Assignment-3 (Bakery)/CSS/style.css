@@ -1,0 +1,401 @@
+:root{
+    --color1:#FFFFFF;
+    --color2:#8E7754;
+    --footer-color:#403D38;
+    --footer-color2:#353330;
+    --section-space:75px
+}
+.container{
+    padding: 25px 0px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.body{
+    font-family: "Alegreya Sans";
+}
+p,i{
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+    font-weight: 900;
+    color: #5a5a5a;
+    line-height: 1.8rem;
+}
+i{
+    font-size: 14px;
+}
+
+section{
+    padding-top: var(--section-space);
+}
+h2,h4{
+    font-family: 'Alegreya', serif;
+    font-weight: 400;
+    padding-bottom:20px;
+    font-size: 32px;
+    color: #212020;
+}
+
+
+/* navbar start */
+.nav-bar{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: var(--color1);
+    border-bottom: 2px solid  var(--color2);
+}
+.nav-bar .icon{
+    width: 250px;
+    margin-left:45px ;
+    padding-left:20px;
+}
+.nav-bar i{
+    font-size: 26px;
+    display: none;
+}
+.nav-bar i:hover{
+    cursor: pointer;
+}
+
+.nav-bar .icon img{
+    width: 90%;
+}
+.nav-bar .navs{
+    margin-right: 50px;
+    padding: 15px;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    font-family: 'Alegreya', serif;
+}
+.nav-bar .navs a{
+    color: rgba(0, 0, 0, 0.464);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.nav-bar .navs a:hover{
+    color: black;
+}
+
+/* navbar end */
+/* Start of main */
+ 
+.main{
+    color: white;
+    background-image: url(../images/drew-coffman-1872.jpg);
+    background-position: 100%;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title{
+    width: 50%;
+}
+
+.title h1{
+    font-size: 75px;
+    font-family: 'Alegreya', serif;
+    font-weight: 50;
+    margin-top: 5px;
+    padding-bottom: 20px;
+
+}
+
+.title p:first-child{
+    font-size: 22px;
+}
+
+.title p{
+    color: rgb(248, 247, 247);
+    font-size: 24px;
+}
+
+.btn{
+    margin-top:20px;
+    margin-right: 5px;
+    padding: 15px 25px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.btn1{
+    background-color: var(--color2);
+}
+.btn2{
+    background-color: transparent;
+    border: 1px solid white;
+}
+.btn1:hover ,.btn2:hover{
+    color: black;
+    background-color: white;
+}
+
+/* end of main */
+
+/* about start */
+
+.about{
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    width: 42%;
+}
+.image img{
+    width: 100%;
+}
+.text{
+    width: 40%;
+    padding: 50px;
+    margin-left: 20px;
+}
+.text p{
+    padding-bottom: 10px;
+}
+
+.text ul{
+    padding: 25px 0px;
+}
+.text ul .icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.559);
+    margin-right:10px;
+}
+.text ul .icon img{
+    width: 100%;
+}
+.text li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+    font-weight: 900;
+    color: #5a5a5a;
+}
+
+/* about end */
+
+/* location start */
+
+.location{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F8F8F8;
+}
+
+.location .image{
+    margin: 0px 50px;
+    padding-bottom:50px ;
+    width: 50%;
+}
+
+.location .text{
+    width: 50%;
+    margin-top: 50px;
+}
+
+/* location end*/
+
+/* baking start*/
+
+.baking{
+    text-align: center;
+}
+.baking .header{
+    padding-bottom: 50px;
+}
+
+.products{
+    display: flex;
+    justify-content: space-evenly;
+}
+.products .item{
+    width: 29%;
+}
+.item img{
+    width: 100%;
+}
+
+.products h4{
+    font-size: 22px;
+    font-family: 'Alegreya', serif;
+    font-weight: 100;
+    padding: 20px ;
+}
+
+/* baking end */
+/* contact start */
+.contact{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+    background-color: #F8F8F8;
+}
+
+.contact .text{
+    width: 50%;
+}
+
+.contact .details{
+    padding-top: 25px;
+}
+
+.contact .icon{
+    background-color: var(--color2);
+}
+.contact .map{
+    padding: 50px 0px;
+}
+
+.contact iframe{
+    width: 500px;
+    height: 500px;
+}
+/* contact end*/
+footer{
+    background-color: var(--footer-color);
+}
+
+.footer-top{
+    display: flex;
+}
+.footer-top p{
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    padding-left: 15px;
+}
+.footer-top li a{
+    font-family: "Alegreya Sans";
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 0px;
+    padding-left: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+}
+.footer-top .col{
+    width: 25%;
+    margin: 0px 15px;
+    padding: 50px 0px;
+}
+.footer-top h4{
+    font-size: 18px;
+    color: white;
+}
+.col li{
+    padding: 10px 0px;
+    border-bottom: #5a5a5a 1px solid;
+    display: flex;
+    align-items: center;
+}
+.col li:last-child{
+    border-bottom: none;
+}
+
+.col p{
+    padding-left: 5px;
+}
+.col1 p{
+    padding:15px 0px;
+}
+.col4 ul{
+    background-image: linear-gradient(rgba(64, 61, 56, 0.9), rgba(64, 61, 56,0.9)) ,url(../images/contact-details-map.png) ;
+    background-position: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.col4 ul img{
+    width: 100%;
+}
+.col4 li a:hover{
+    color: white;
+    font-weight: 600;
+}
+.col4 i{
+    font-size: 18px;
+}
+.col4 li .fa-location-dot{
+    align-self: center;
+    padding-bottom: 25px;
+    padding-right: 5px;
+}
+.footer-bottom{
+    background-color: var(--footer-color2);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-bottom p{
+    padding: 15px 0px;
+}
+
+.socials{
+    display: flex;
+}
+.footer-bottom p{
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.627);
+}
+.socials .icon{
+    background-color: var(--footer-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.socials .icon i{
+    color: rgba(198, 198, 198, 0.5);
+    font-size: 24px;
+}
+.socials .icon:hover i{
+    color: white;
+}
+.socials .fa-icon:hover{
+    background-color: rgb(24,119,242);
+    cursor: pointer;
+}
+.socials .gm-icon:hover{
+    background-color: 	rgb(234, 67, 53);
+    cursor: pointer;
+
+}
+.socials .in-icon:hover{
+    background-color: 	#0072b1;
+    cursor: pointer;
+}
+.socials .tw-icon:hover{
+    background-color: #1DA1F2;
+    cursor: pointer;
+}
