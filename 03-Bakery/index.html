@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <div class="nav-bar">
-        <div class="icon">
-            <a href="#Home"> <img src="images/bakery-light-1.png" /></a>
+    <nav id="navbar" class="nav-bar">
+        <div class="logo">
+            <a href="#Home"> <img id="HomeIcon" src="images/bakery-light-1.png" /></a>
         </div>
         <div class="navs">
             <a href="#Home">Home</a>
@@ -27,25 +27,21 @@
             <a href="#Contact">Contact</a>
             <i class="fa-solid fa-bars"></i>
         </div>
-        
-       
-    </div>
+    </nav>
 
-    <main>
-        <div class="main">
-            <div class="title">
-                <p>Welcome to</p>
-                <h1>Family Bakery</h1>
-                <p>We're the biggest, best equipped and most advanced Bakery in the greater Los Angeles area.</p>
-                <div class="buttons">
-                    <button class="btn btn1">Learn more</button>
-                    <button class="btn btn2">Contact us</button>
-                </div>
+    <main id="Home">
+        <div class="title">
+            <p>Welcome to</p>
+            <h1>Family Bakery</h1>
+            <p>We're the biggest, best equipped and most advanced Bakery in the greater Los Angeles area.</p>
+            <div class="buttons">
+                <button class="btn btn1">Learn more</button>
+                <button class="btn btn2">Contact us</button>
             </div>
         </div>
     </main>
 
-    <section class="about">
+    <section id="About">
         <div class="container">
             <div class="about">
                 <div class="image"> <img src="images/alexandru-stavrica.jpg" alt=""></div>
@@ -133,41 +129,43 @@
         </div>
     </section>
 
-    <section class="contact">
-        <div class="container">
+    <section id="Contact">
+        <div class="contact">
+            <div class="container">
 
-            <div class="contact">
-                <div class="text">
-                    <h2>Contact Information</h2>
-                    <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <div class="contact">
+                    <div class="text">
+                        <h2>Contact Information</h2>
+                        <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
-                    <p class="details">Our contact details:</p>
+                        <p class="details">Our contact details:</p>
 
-                    <ul>
-                        <li>
-                            <div class="icon"><img src="images/Icons/map.png" /></div> Manchester St 123-78B, Random
-                            713, UK
-                        </li>
-                        <li>
-                            <div class="icon"><img src="images/Icons/phone.png" /></div> +46 123 456 789
-                        </li>
-                        <li>
-                            <div class="icon"><img src="images/Icons/headphone.png" /></div> +37 431 456 789
-                        </li>
-                        <li>
-                            <div class="icon"><img src="images/Icons/email.png" /></div> hello@sitename.com
-                        </li>
-                    </ul>
+                        <ul>
+                            <li>
+                                <div class="icon"><img src="images/Icons/map.png" /></div> Manchester St 123-78B, Random
+                                713, UK
+                            </li>
+                            <li>
+                                <div class="icon"><img src="images/Icons/phone.png" /></div> +46 123 456 789
+                            </li>
+                            <li>
+                                <div class="icon"><img src="images/Icons/headphone.png" /></div> +37 431 456 789
+                            </li>
+                            <li>
+                                <div class="icon"><img src="images/Icons/email.png" /></div> hello@sitename.com
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1989.2905400210252!2d-73.99897138981872!3d40.71975012842048!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259898d88c091%3A0x8e3dddb04fa267c7!2s8%20Howard%20St%20%23109%2C%20New%20York%2C%20NY%2010013!5e0!3m2!1sen!2sus!4v1697987896420!5m2!1sen!2sus"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1989.2905400210252!2d-73.99897138981872!3d40.71975012842048!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259898d88c091%3A0x8e3dddb04fa267c7!2s8%20Howard%20St%20%23109%2C%20New%20York%2C%20NY%2010013!5e0!3m2!1sen!2sus!4v1697987896420!5m2!1sen!2sus"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
             </div>
         </div>
     </section>
@@ -253,8 +251,18 @@
                 <div class="tw-icon icon"><i class="fa-brands fa-twitter"></i></div>
             </div>
         </div>
+        
+        <div class="utility-buttons">
+            <div class="icon">
+                <div class="tw-icon "> <a href="#Home">  <i class="fa-solid fa-chevron-up"></i> </a></div>
+            </div>
+            
+          
+        </div>
     </footer>
+    
     <script src="https://kit.fontawesome.com/14d6c58e3f.js" crossorigin="anonymous"></script>
+    <script src="JS/main.js"></script>
 </body>
 
 </html>

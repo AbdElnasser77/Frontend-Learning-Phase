@@ -16,9 +16,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
-.body{
+body{
     font-family: "Alegreya Sans";
+
 }
 p,i{
     font-family: "Alegreya Sans";
@@ -44,22 +46,26 @@ h2,h4{
 
 
 /* navbar start */
+
 .nav-bar{
     position: fixed;
+    z-index: 10;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    background-color: transparent;
-    /* border-bottom: 2px solid  var(--color2); */
+    padding: 10px 0px;
+    transition: all 0.4s;
 }
 
-.nav-bar .icon{
-    width: 250px;
+.nav-bar .logo{
+    width: 220px;
     margin-left:45px ;
-    padding-left:20px;
+    padding-left:30px;
+}
+.nav-bar .logo img{
+    width: 100%;
 }
 .nav-bar i{
     font-size: 26px;
@@ -68,7 +74,6 @@ h2,h4{
 .nav-bar i:hover{
     cursor: pointer;
 }
-
 .nav-bar .icon img{
     width: 90%;
 }
@@ -81,24 +86,35 @@ h2,h4{
     font-size: 18px;
     font-family: 'Alegreya', serif;
 }
-.nav-bar .navs a{
+.navs a{
     color: white;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
-.nav-bar .navs a:hover{
-    color: rgba(255, 255, 255, 0.501);
+.navs a:hover{
+    color: var(--color2);
 }
 
+.scrolled{
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+ 
+}
+.scrolled a{
+    color: rgb(85, 85, 85);
+}
+.scrolled a:hover{
+    color: black;
+}
 /* navbar end */
 /* Start of main */
- 
-.main{
+
+main{
     color: white;
-    background-image: url(../images/drew-coffman-1872.jpg);
-    background-position: 100%;
-    background-size: cover;
     height: 100vh;
+    background-image: url(../images/drew-coffman-1872.jpg);
+    background-position: 100% ;
+    background-size: cover;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -256,7 +272,6 @@ h2,h4{
 .contact{
     display: flex;
     justify-content: space-around;
-    padding: 50px 0px;
     background-color: #F8F8F8;
 }
 
@@ -366,7 +381,7 @@ footer{
     font-size: 17px;
     color: rgba(255, 255, 255, 0.627);
 }
-.socials .icon{
+.icon{
     background-color: var(--footer-color);
     width: 40px;
     height: 40px;
@@ -375,28 +390,41 @@ footer{
     justify-content: center;
     align-items: center;
     margin: 5px;
+    cursor: pointer;
 }
-.socials .icon i{
+.icon i{
     color: rgba(198, 198, 198, 0.5);
     font-size: 24px;
 }
-.socials .icon:hover i{
+.icon:hover i{
     color: white;
 }
 .socials .fa-icon:hover{
     background-color: rgb(24,119,242);
-    cursor: pointer;
 }
 .socials .gm-icon:hover{
     background-color: 	rgb(234, 67, 53);
-    cursor: pointer;
-
 }
 .socials .in-icon:hover{
     background-color: 	#0072b1;
-    cursor: pointer;
 }
 .socials .tw-icon:hover{
     background-color: #1DA1F2;
-    cursor: pointer;
+}
+
+
+
+.utility-buttons{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 5px;
+}
+
+.utility-buttons .icon{
+    border: white solid 2px;
+    opacity: 0.3;
+    height: 35px;
+    width: 35px;
+
 }
