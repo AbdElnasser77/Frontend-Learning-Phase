@@ -1,22 +1,28 @@
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
+    
+    <div id="particles-js"></div>
     <div class="main vh-100 text-white shadow-lg ">
         <div class="d-flex flex-column justify-content-center align-items-center">
             <div class="heading">
-                <h1 class="fw-bolder m-5 ">Quote of the Day</h1>
+                <h1 class="fw-bolder m-5 text-gradient">Quote of the Day</h1>
             </div>
             <button class="btn btn-outline-light border-1 px-5 py-2 m-2" onclick="randomQuote()">New Quote</button>
-            
-            <p id="Quote-Container" class="fs-5 fst-italic text-center mt-5 w-75 "></p> 
+            <div class="text-container text-center">
+                <p id="Quote-box" class="fade show fs-5 fst-italic text-center mt-5 px-5 ">Most people are other people. Their thoughts are someone else's opinions, their lives a mimicry, their passions a quotation.</p>
+            </div>
         </div>
     </div>
-
-
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
