@@ -5,6 +5,10 @@
     --light-color-text: #fff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -18,25 +22,22 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-img {
-    width: 100%;
-}
-
-section{
+section {
     padding: 80px 0px;
 }
 
 /* scroll animation transition */
-.hidden{
+.hidden {
     opacity: 0;
     transition: all 1s;
 }
 
-.show{
+.show {
     opacity: 1;
     transition: all 1s;
 
 }
+
 /* General End */
 
 /* Nav Start */
@@ -57,14 +58,11 @@ nav .nav-link:hover {
     color: var(--main-color) !important
 }
 
-
 nav .nav-link.active {
     color: var(--main-color) !important;
 }
 
 /* Nav End */
-
-
 
 /* Hero Section Start */
 
@@ -119,19 +117,64 @@ main {
 
 /* About Section Start */
 
-.about-image{
+.about-image {
     border: 8px solid rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+}
+
+.img-box {
+    transform: translate(10%, 5%);
     overflow: hidden;
 }
-.about-image:hover .img-overlay{
-    transform: translateY(0%);
-    transition: all 0.3s ease;
+
+.img-box:hover .img-overlay {
+    transition: all 0.4s ease;
+    transform: translate(0%, 0%);
 }
-.img-overlay{
+
+.img-overlay {
     background-color: rgba(0, 0, 0, 0.6);
-    transform: translateY(100%);
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
+    transform: translateX(0%) translateY(100%);
+    z-index: 1;
+}
+
+.img-overlay i {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+
+}
+
+.img-box:hover i {
+    transition: transform .3s ease, opacity .3s ease;
+    transform: translateY(0%);
+    opacity: 1;
+
+}
+
+.img-box:hover .img-overlay i:nth-child(1) {
+    transition-property: opacity, color;
+    transition-delay: 0.4s, 0.1s;
+}
+
+.img-box:hover .img-overlay i:nth-child(2) {
+    transition-property: opacity, color;
+    transition-delay: 0.5s, 0.1s;
+}
+
+.img-box:hover .img-overlay i:nth-child(3) {
+    transition-property: opacity, color;
+    transition-delay: 0.6s, 0.1s;
+}
+
+.img-box:hover .img-overlay i:nth-child(4) {
+    transition-property: opacity, color;
+    transition-delay: 0.7s, 0.1s;
+}
+
+.img-overlay i:hover {
+    color: var(--main-color) !important;
+    cursor: pointer;
 }
 
 /* About Section End */
