@@ -20,13 +20,14 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="css/mediaquery.css">
     <title>Fokir</title>
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg fixed-to bg-dark fixed-top">
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
             <div class="container">
                 <a class="navbar-brand fw-bolder fs-4" href="#Home">Fokir</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -62,26 +63,41 @@
     <!-- about section -->
     <section id="About">
         <div class="container">
-            <div class="d-flex justify-content-center">
-                <div class="about-image hidden w-50 position-relative z-0">
+            <div class="about-container d-flex justify-content-center">
+                <div class="about-image h-100 hidden w-50 position-relative z-0">
                     <div class="img-box">
-                        <div class="img-overlay h-100 position-absolute z-1 w-100 d-flex justify-content-center align-items-center">
-                                    <i class="fa-brands fa-facebook-f fs-4 text-white px-2"></i>
-                                    <i class="fa-brands fa-x-twitter fs-4 text-white px-2"></i>
-                                    <i class="fa-brands fa-google fs-4 text-white px-2"></i>
-                                    <i class="fa-brands fa-github fs-4 text-white px-2"></i>
-
+                        <div
+                            class="img-overlay h-100 position-absolute z-1 w-100 d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-facebook-f fs-4 text-white px-2"></i>
+                            <i class="fa-brands fa-x-twitter fs-4 text-white px-2"></i>
+                            <i class="fa-brands fa-google fs-4 text-white px-2"></i>
+                            <i class="fa-brands fa-github fs-4 text-white px-2"></i>
                         </div>
-                        <img class="w-100" src="Assets/images/about.jpg" alt="">
+                        <img class="w-100" src="Assets/images/about.jpg" alt="About Image">
                     </div>
                 </div>
-                <div class="about-text hidden w-100 ms-5 p-4">
-                    <h2>Hello,</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam omnis architecto placeat ut
+                <div class="about-text hidden w-75 ms-5 p-4">
+                    <h2 class="fs-2">Hello,</h2>
+                    <p class="py-3 pe-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam omnis
+                        architecto placeat ut
                         doloremque veniam cupiditate suscipit minus ipsa iste, aspernatur blanditiis ullam odio
                         veritatis quo provident quos dignissimos adipisci repellat tenetur deserunt! Voluptates,
                         consectetur! Rem consectetur nobis ipsa eos similique distinctio nulla porro dolorem eligendi
                         cumque, incidunt iusto!</p>
+
+                        <ul >
+                            <li><span>Name: </span>  Rdam smith</li>
+                            <li><span>Job Title: </span> UX/UI Designer</li>
+                            <li><span>Age: </span>  26 Year</li>
+                            <li><span>Location: </span>  United States, US </li>
+                            <li><span>Freelance: </span>  Available </li>
+                            <li><span>E-mail: </span> example@gmail.com </li>
+                        </ul>
+
+                        <div class="buttons">
+                            <button class="btn py-2 px-4 me-2">Download CV <i class="fa-solid fa-download"></i> </button>
+                            <button class="btn py-2 px-4">Hire Me <i class="fa-regular fa-paper-plane"></i> </button>
+                        </div>
                 </div>
             </div>
         </div>

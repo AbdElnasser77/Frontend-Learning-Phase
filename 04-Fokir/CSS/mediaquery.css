@@ -1,0 +1,57 @@
+@media screen and (max-width:991px) {
+    .about-image {
+        border: none;
+    }
+
+    .about-image {
+        width: 100% !important;
+    }
+
+    .img-box {
+        transform: translate(0%, 0%);
+    }
+
+    .img-box:hover .img-overlay {
+        transition: all 0.4s ease;
+        transform: translate(0%, 0%);
+    }
+
+    .about-text {
+        width: 100%;
+        padding: 0 !important;
+    }
+
+    #About .container {
+        max-width: 90% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        /* للتجربة */
+    }
+}
+
+@media screen and (max-width:870px) {
+    .about-container {
+        flex-direction: column !important;
+    }
+
+    #About .container {
+        max-width: 85% !important;
+        /* للتجربة */
+    }
+
+    .about-text{
+        padding-top:20px  !important;
+        margin: 0 !important;
+    }
+    .about-text p{
+        padding: 0 !important;
+    }
+
+    .about-text li{
+        width: 50%;
+    }
+    .about-text button{
+        width: 100%;
+        margin: 10px;
+    }
+}

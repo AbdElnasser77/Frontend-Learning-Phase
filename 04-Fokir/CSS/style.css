@@ -45,7 +45,6 @@ section {
     color: var(--main-color) !important;
 }
 
-
 nav .nav-link {
     color: white !important;
     padding: 10px 25px;
@@ -62,6 +61,17 @@ nav .nav-link.active {
     color: var(--main-color) !important;
 }
 
+/* nav bar hide on scroll */
+.navbar{
+    background-color: rgba(0, 0, 0, 0.462);
+    backdrop-filter: blur(20px);
+    opacity: 1;
+    transition: top 0.5s ease-in-out, opacity 0.7s ease;
+}
+.navbar.hide{
+    top: -100px !important;
+    opacity: 0;
+}
 /* Nav End */
 
 /* Hero Section Start */
@@ -69,7 +79,7 @@ nav .nav-link.active {
 main {
     background-image: url(../Assets/images/hero_img.jpg);
     height: 100vh;
-    background-position: 100%;
+    background-position: center;
     background-size: cover;
     color: white;
 }
@@ -117,6 +127,10 @@ main {
 
 /* About Section Start */
 
+#About{
+    background-color: var(--light-color-text);
+}
+
 .about-image {
     border: 8px solid rgba(0, 0, 0, 0.6);
     border-radius: 10px;
@@ -142,14 +156,12 @@ main {
 .img-overlay i {
     transition: opacity 0.3s ease;
     opacity: 0;
-
 }
 
 .img-box:hover i {
     transition: transform .3s ease, opacity .3s ease;
     transform: translateY(0%);
     opacity: 1;
-
 }
 
 .img-box:hover .img-overlay i:nth-child(1) {
@@ -176,5 +188,49 @@ main {
     color: var(--main-color) !important;
     cursor: pointer;
 }
+.about-text h2{
+    border-left:var(--main-color) solid 5px;
+    padding-left: 5px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
 
+.about-text p{
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.6;
+    border-bottom:dashed rgba(0, 0, 0, 0.5) 1px;
+}
+
+.about-text ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 18px;
+}
+
+.about-text li{
+    width: 40%;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+}
+.about-text span{
+    font-weight: 600;
+    color: black;
+}
+
+.buttons .btn{
+    background-color: var(--main-color);
+    color: white;
+    transition: all 0.5s ease;
+    border: 2px solid transparent;
+}
+
+.buttons .btn:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid var(--main-color);
+}
 /* About Section End */

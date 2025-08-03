@@ -3,6 +3,9 @@
 // variables
 const navLink = document.querySelectorAll('.nav-link');
 const hiddenElements = document.querySelectorAll('.hidden');
+const navbar = document.querySelector('.navbar');
+
+
 // Typed JS 
 var typed = new Typed('#typed', {
   strings: ["Web Developer", "UI/UX Designer", "Freelancer"],
@@ -13,9 +16,24 @@ var typed = new Typed('#typed', {
   loop: true
 });
 
+// Navbar Hide Animation
+
+let lastScroll = 0;
+
+window.addEventListener('scroll', function(){
+  let currentScroll = this.window.pageYOffset;
+  
+  if(currentScroll > lastScroll) 
+    navbar.classList.add('hide');
+  else
+    navbar.classList.remove('hide');
+
+  lastScroll = currentScroll <= 0 ? 0 : currentScroll;
+});
+
 // Navbar Active
 navLink.forEach(link => {
-  link.addEventListener('click', function(){
+  link.addEventListener('click', function () {
     navLink.forEach(l => l.classList.remove('active'));
     this.classList.add('active');
   });
@@ -24,11 +42,11 @@ navLink.forEach(link => {
 // animation
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('show');
-      }else{
-        entry.target.classList.remove('show');
-      }
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
   });
 })
 hiddenElements.forEach((el) => observer.observe(el));
