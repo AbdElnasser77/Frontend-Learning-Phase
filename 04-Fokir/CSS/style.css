@@ -5,6 +5,14 @@
     --light-color-text: #fff;
 }
 
+.bg1 {
+    background-color: var(--light-color-text);
+}
+
+.bg2 {
+    background-color: var(--second-color);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -26,11 +34,64 @@ section {
     padding: 80px 0px;
 }
 
+
+.section-header {
+    text-align: center;
+}
+
+.section-header h2 {
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.line {
+  background-color: var(--main-color);
+  width: 20%;
+  height: 1px;
+  margin: 5px auto;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.line::after,
+.line::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  background-color: var(--main-color);
+  top: 50%;
+  transition: transform 1s ease-in-out;
+}
+
+.line::after {
+    transform: translate(-150%, 10px);
+}
+
+.line::before {
+    transform: translate(50%, -10px);
+}
+
+.line.animate-lines {
+  opacity: 1;
+}
+
+.line.animate-lines::after {
+    transform: translate(-50%, 10px);
+}
+
+.line.animate-lines::before {
+    transform: translate(-50%, -10px);
+}
+
+
 /* scroll animation transition */
 .hidden {
     opacity: 0;
     transition: all 1s;
 }
+
 
 .show {
     opacity: 1;
@@ -62,16 +123,18 @@ nav .nav-link.active {
 }
 
 /* nav bar hide on scroll */
-.navbar{
+.navbar {
     background-color: rgba(0, 0, 0, 0.462);
     backdrop-filter: blur(20px);
     opacity: 1;
     transition: top 0.5s ease-in-out, opacity 0.7s ease;
 }
-.navbar.hide{
+
+.navbar.hide {
     top: -100px !important;
     opacity: 0;
 }
+
 /* Nav End */
 
 /* Hero Section Start */
@@ -127,7 +190,7 @@ main {
 
 /* About Section Start */
 
-#About{
+#About {
     background-color: var(--light-color-text);
 }
 
@@ -188,21 +251,22 @@ main {
     color: var(--main-color) !important;
     cursor: pointer;
 }
-.about-text h2{
-    border-left:var(--main-color) solid 5px;
+
+.about-text h2 {
+    border-left: var(--main-color) solid 5px;
     padding-left: 5px;
     line-height: 30px;
     text-transform: uppercase;
     font-weight: 500;
 }
 
-.about-text p{
+.about-text p {
     color: rgba(0, 0, 0, 0.7);
     line-height: 1.6;
-    border-bottom:dashed rgba(0, 0, 0, 0.5) 1px;
+    border-bottom: dashed rgba(0, 0, 0, 0.5) 1px;
 }
 
-.about-text ul{
+.about-text ul {
     list-style: none;
     padding: 0;
     display: flex;
@@ -211,26 +275,47 @@ main {
     font-size: 18px;
 }
 
-.about-text li{
+.about-text li {
     width: 40%;
     color: rgba(0, 0, 0, 0.8);
     padding: 5px;
 }
-.about-text span{
+
+.about-text span {
     font-weight: 600;
     color: black;
 }
 
-.buttons .btn{
+.buttons .btn {
     background-color: var(--main-color);
     color: white;
     transition: all 0.5s ease;
     border: 2px solid transparent;
 }
 
-.buttons .btn:hover{
+.buttons .btn:hover {
     color: black;
     background-color: white;
     border: 2px solid var(--main-color);
 }
+
 /* About Section End */
+
+/* Service Section Start */
+.services-content .service{
+    transition: all .4s ;
+}
+.services-content .service h5{
+    text-transform: uppercase ;
+    font-weight: 600;
+}
+.services-content .service p{
+    color: rgba(0, 0, 0, 0.7);
+    padding: 0px 10px;
+}
+.services-content .service:hover{
+    background: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Service Section End */

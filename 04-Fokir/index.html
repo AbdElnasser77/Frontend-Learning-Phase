@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+3:wght@400;500;600;700;800;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
     <!-- Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -39,7 +37,7 @@
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link active" aria-current="page" href="#Home">Home</a>
                         <a class="nav-link" href="#About">About</a>
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#Services">Services</a>
                         <a class="nav-link" href="#">Portfolio</a>
                         <a class="nav-link" href="#">Testimonial</a>
                         <a class="nav-link" href="#">Blog</a>
@@ -85,24 +83,64 @@
                         consectetur! Rem consectetur nobis ipsa eos similique distinctio nulla porro dolorem eligendi
                         cumque, incidunt iusto!</p>
 
-                        <ul >
-                            <li><span>Name: </span>  Rdam smith</li>
-                            <li><span>Job Title: </span> UX/UI Designer</li>
-                            <li><span>Age: </span>  26 Year</li>
-                            <li><span>Location: </span>  United States, US </li>
-                            <li><span>Freelance: </span>  Available </li>
-                            <li><span>E-mail: </span> example@gmail.com </li>
-                        </ul>
+                    <ul>
+                        <li><span>Name: </span> Rdam smith</li>
+                        <li><span>Job Title: </span> UX/UI Designer</li>
+                        <li><span>Age: </span> 26 Year</li>
+                        <li><span>Location: </span> United States, US </li>
+                        <li><span>Freelance: </span> Available </li>
+                        <li><span>E-mail: </span> example@gmail.com </li>
+                    </ul>
 
-                        <div class="buttons">
-                            <button class="btn py-2 px-4 me-2">Download CV <i class="fa-solid fa-download"></i> </button>
-                            <button class="btn py-2 px-4">Hire Me <i class="fa-regular fa-paper-plane"></i> </button>
-                        </div>
+                    <div class="buttons">
+                        <button class="btn py-2 px-4 me-2">Download CV <i class="fa-solid fa-download"></i> </button>
+                        <button class="btn py-2 px-4">Hire Me <i class="fa-regular fa-paper-plane"></i> </button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- services section -->
+    <section id="Services" class="bg2">
+        <div class="container">
+            <div class="section-header header">
+                <h2 class="mb-3 hidden">Our Services</h2>
+                <div class="line">
+                </div>
+            </div>
+            <div class="services-content my-5 pt-3 d-flex text-center">
+                <div class="service py-4 px-3 w-25">
+                    <i class="fa-solid fa-pen-ruler fs-2 text-danger"></i>
+                    <h5 class="pt-3 pb-1">UI/UX Design</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum impedit possimus omnis facilis
+                        consectetur rem.</p>
+                </div>
+                <div class="service pt-4 px-3 w-25">
+                    <i class="fa-solid fa-code fs-2 text-danger"></i>
+                    <h5 class="pt-3 pb-1">App Development</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum impedit possimus omnis facilis
+                        consectetur rem.</p>
+                </div>
+                <div class="service pt-4 px-3 w-25">
+                    <i class="fa-solid fa-pen-to-square fs-2 text-danger"></i>
+                    <h5 class="pt-3 pb-1">product design</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum impedit possimus omnis facilis
+                        consectetur rem.</p>
+                </div>
+                <div class="service pt-4 px-3 w-25">
+                    <i class="fa-solid fa-gears fs-2 text-danger"></i>
+                    <h5 class="pt-3 pb-1">maintenance</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum impedit possimus omnis facilis
+                        consectetur rem.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- fontawesome JS -->
+    <script src="https://kit.fontawesome.com/14d6c58e3f.js" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"

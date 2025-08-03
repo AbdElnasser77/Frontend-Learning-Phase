@@ -4,6 +4,7 @@
 const navLink = document.querySelectorAll('.nav-link');
 const hiddenElements = document.querySelectorAll('.hidden');
 const navbar = document.querySelector('.navbar');
+const lines = document.querySelectorAll('.line');
 
 
 // Typed JS 
@@ -40,10 +41,13 @@ navLink.forEach(link => {
 });
 
 // animation
+
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('show');
+      
     } else {
       entry.target.classList.remove('show');
     }
@@ -51,3 +55,19 @@ const observer = new IntersectionObserver((entries) => {
 })
 hiddenElements.forEach((el) => observer.observe(el));
 
+
+// Header Animation
+
+const headerLines = document.querySelectorAll('.line');
+
+const lineObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-lines');
+    } else {
+      entry.target.classList.remove('animate-lines');
+    }
+  });
+});
+
+headerLines.forEach(line => lineObserver.observe(line));
