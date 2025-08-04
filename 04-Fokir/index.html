@@ -24,6 +24,7 @@
 
 <body>
 
+    <!-- navbar -->
     <header>
         <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
             <div class="container">
@@ -38,10 +39,10 @@
                         <a class="nav-link active" aria-current="page" href="#Home">Home</a>
                         <a class="nav-link" href="#About">About</a>
                         <a class="nav-link" href="#Services">Services</a>
-                        <a class="nav-link" href="#">Portfolio</a>
-                        <a class="nav-link" href="#">Testimonial</a>
-                        <a class="nav-link" href="#">Blog</a>
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#Portfolio">Portfolio</a>
+                        <a class="nav-link" href="#Testimonial">Testimonial</a>
+                        <a class="nav-link" href="#Blog">Blog</a>
+                        <a class="nav-link" href="#Contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -58,8 +59,8 @@
         </div>
     </main>
 
-    <!-- about section -->
-    <section id="About">
+    <!-- About Section -->
+    <section id="About" class="bg1">
         <div class="container">
             <div class="about-container d-flex justify-content-center">
                 <div class="about-image h-100 hidden w-50 position-relative z-0">
@@ -101,7 +102,7 @@
         </div>
     </section>
 
-    <!-- services section -->
+    <!-- Services Section -->
     <section id="Services" class="bg2">
         <div class="container">
             <div class="section-header header">
@@ -138,6 +139,222 @@
             </div>
         </div>
     </section>
+
+    <!-- Portfolio Section -->
+    <section id="Portfolio" class="bg1">
+        <div class="container">
+            <div class="section-header header">
+                <h2 class="mb-3 hidden">Our Portfolio</h2>
+                <div class="line">
+                </div>
+            </div>
+
+            <div class="hidden categories text-center mt-5 ">
+                <button>all</button>
+                <button>graphic</button>
+                <button>webdesign</button>
+                <button>branding</button>
+            </div>
+
+            <div class="hidden items mt-5 p-2 d-flex flex-wrap justify-content-center gap-4">
+                <div class="item">
+                    <div class="overlay d-flex justify-content-end align-items-end">
+                        <i class="fa-solid fa-link text-danger fs-5 p-3"></i>
+                    </div>
+                    <img src="Assets/images/portfolio/1.jpg" alt="portfolio 1">
+                </div>
+
+                <div class="item">
+                    <div class="overlay d-flex justify-content-end align-items-end">
+                        <i class="fa-solid fa-link text-danger fs-5 p-3"></i>
+                    </div>
+                    <img src="Assets/images/portfolio/2.jpg" alt="portfolio 2">
+                </div>
+
+                <div class="item">
+                    <div class="overlay d-flex justify-content-end align-items-end">
+                        <i class="fa-solid fa-link text-danger fs-5 p-3"></i>
+                    </div>
+                    <img src="Assets/images/portfolio/3.jpg" alt="portfolio 3">
+                </div>
+
+                <div class="item">
+                    <div class="overlay d-flex justify-content-end align-items-end">
+                        <i class="fa-solid fa-link text-danger fs-5 p-3"></i>
+                    </div>
+                    <img src="Assets/images/portfolio/4.jpg" alt="portfolio 4">
+                </div>
+
+                <div class="item">
+                    <div class="overlay d-flex justify-content-end align-items-end">
+                        <i class="fa-solid fa-link text-danger fs-5 p-3"></i>
+                    </div>
+                    <img src="Assets/images/portfolio/5.jpg" alt="portfolio 5">
+                </div>
+
+                <div class="item">
+                    <div class="overlay d-flex justify-content-end align-items-end">
+                        <i class="fa-solid fa-link text-danger fs-5 p-3"></i>
+                    </div>
+                    <img src="Assets/images/portfolio/6.jpg" alt="portfolio 6">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <!-- Stats Section -->
+    <section id="Stats" class="bg2">
+        <div class="container stats-container d-flex justify-content-evenly flex-nowrap text-center">
+            <div class="stats-content">
+                <i class="fa-solid fa-user-group text-danger fs-2"></i>
+                <h6 class="pt-2 fw-bold fs-4 counter">200</h6>
+                <p class="fs-6">Team Members</p>
+            </div>
+            <div class="stats-content">
+                <i class="fa-solid fa-file-code text-danger fs-2"></i>
+                <h6 class="pt-2 fw-bold fs-4 counter">345</h6>
+                <p class="fs-6">Complete Projects</p>
+            </div>
+            <div class="stats-content">
+                <i class="fa-solid fa-download text-danger fs-2"></i>
+                <h6 class="pt-2 fw-bold fs-4 counter">1800</h6>
+                <p class="fs-6">Files Downloaded</p>
+            </div>
+            <div class="stats-content">
+                <i class="fa-solid fa-mug-saucer text-danger fs-2"></i>
+                <h6 class="pt-2 fw-bold fs-4 counter">1200</h6>
+                <p class="fs-6">Lines Of Code</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="Testimonial" class="bg1">
+        <div class="container">
+            <div class="section-header header">
+                <h2 class="mb-3 hidden">Client's Feedback</h2>
+                <div class="line">
+                </div>
+            </div>
+
+
+            <div class="feedback mt-5 py-5 bg2 m-auto px-3 w-75 hidden">
+                <div class="content d-flex justify-content-center">
+                    <div class="img-content pb-5 px-5 d-flex align-content-center justify-content-center mt-4">
+                        <div class="img-frame overflow-hidden rounded-circle ">
+                            <img src="Assets/images/feedback.jpg" class="w-100" alt="Client Feedback Image">
+                        </div>
+                    </div>
+                    <div class=" text-content w-100">
+                        <h4 class="fw-bold">Alex ander</h4>
+                        <span class="text-black-50"><i class="text-danger fa-solid fa-location-dot"></i> United</span>
+                        <p class="pt-1 text-black-50 pe-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                            optio itaque nulla praesentium
+                            voluptas quo inventore, nam odit incidunt rerum voluptate hic illum sit reiciendis.</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="Blog" class="bg2">
+        <div class="container">
+            <div class="section-header header">
+                <h2 class="mb-3 hidden">Our Blog</h2>
+                <div class="line">
+                </div>
+            </div>
+            <div class="blogs d-flex justify-content-center gap-3 mt-5 hidden">
+                <div class="blog bg-white">
+                    <div class="post-image mb-2">
+                        <img src="Assets/images/blog/12.jpg" alt="blog 1" class="w-100">
+                    </div>
+                    <div class="text-content px-3 pb-4">
+                        <span class="text-black-50 fs-6">23 November, 2015</span>
+                        <h4 class="pt-2"><a href="#"> web design Blog Post </a> </h4>
+                        <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea,
+                            quis magnam deserunt eius incidunt repellat molestiae.</p>
+                        <a href="">READMORE <i class="ps-1 fa-solid fa-arrow-right text-danger"></i> </a>
+                    </div>
+                </div>
+                <div class="blog bg-white ">
+                    <div class="post-image mb-2">
+                        <iframe class="w-100" height="200px" src="https://www.youtube.com/embed/uVju5--RqtY"
+                            title="Envato - Bringing Ideas to Life" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="text-content px-3 pb-4">
+                        <span class="text-black-50 fs-6">20 April, 2018</span>
+                        <h4 class="pt-2"> <a href="#"> Development Blog Post </a> </h4>
+                        <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea,
+                            quis magnam deserunt eius incidunt repellat molestiae.</p>
+                        <a href="">READMORE <i class="ps-1 fa-solid fa-arrow-right text-danger"></i> </a>
+                    </div>
+                </div>
+
+                <div class="blog bg-white">
+                    <div class="post-image mb-2">
+                        <img src="Assets/images/blog/32.jpg" alt="blog 1" class="w-100 ">
+                    </div>
+                    <div class="text-content px-3 pb-4">
+                        <span class="text-black-50 fs-6">17 May, 2017</span>
+                        <h4 class="pt-2 "> <a href="#"> Full Width Blog Post </a> </h4>
+                        <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea,
+                            quis magnam deserunt eius incidunt repellat molestiae.</p>
+                        <a href="">READMORE <i class="ps-1 fa-solid fa-arrow-right text-danger"></i> </a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Contact" class="bg1">
+        <div class="container">
+            <div class="section-header header mb-5">
+                <h2 class="mb-3 hidden">Contact Us</h2>
+                <div class="line">
+                </div>
+            </div>
+
+            <form action="" class="form w-75 m-auto">
+                <div class="mb-3 d-flex gap-4">
+                    <input type="text" class="form-control w-50" id="Name" placeholder="Name">
+                    <input type="email" class="form-control w-50" id="Email" placeholder="Email address">
+                </div>
+                <input type="text" class="form-control mb-3" id="Subject" placeholder="Subjet">
+
+                <textarea class="form-control " id="Message" rows="5" placeholder="Message"></textarea>
+
+                <button type="submit" class="btn py-2 px-5 mt-3">Send Message</button>
+            </form>
+
+
+    </section>
+
 
     <!-- fontawesome JS -->
     <script src="https://kit.fontawesome.com/14d6c58e3f.js" crossorigin="anonymous"></script>

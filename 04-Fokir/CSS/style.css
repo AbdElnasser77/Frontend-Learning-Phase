@@ -16,7 +16,14 @@
 html {
     scroll-behavior: smooth;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 
+textarea{
+    resize: none;
+}
 h1,
 h2,
 h3,
@@ -34,7 +41,20 @@ section {
     padding: 80px 0px;
 }
 
+button:focus {
+  border: var(--main-color) 1px solid !important;
+  box-shadow: none !important;
+}
 
+input:focus{
+  border: var(--main-color) 1px solid !important;
+  box-shadow: none !important;
+}
+textarea:focus{
+  border: var(--main-color) 1px solid !important;
+  box-shadow: none !important;
+
+}
 .section-header {
     text-align: center;
 }
@@ -45,24 +65,24 @@ section {
 }
 
 .line {
-  background-color: var(--main-color);
-  width: 20%;
-  height: 1px;
-  margin: 5px auto;
-  position: relative;
-  opacity: 0;
-  transition: opacity 0.6s ease-in-out;
+    background-color: var(--main-color);
+    width: 20%;
+    height: 1px;
+    margin: 5px auto;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
 }
 
 .line::after,
 .line::before {
-  content: '';
-  position: absolute;
-  width: 50%;
-  height: 1px;
-  background-color: var(--main-color);
-  top: 50%;
-  transition: transform 1s ease-in-out;
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background-color: var(--main-color);
+    top: 50%;
+    transition: transform 1s ease-in-out;
 }
 
 .line::after {
@@ -74,7 +94,7 @@ section {
 }
 
 .line.animate-lines {
-  opacity: 1;
+    opacity: 1;
 }
 
 .line.animate-lines::after {
@@ -91,7 +111,6 @@ section {
     opacity: 0;
     transition: all 1s;
 }
-
 
 .show {
     opacity: 1;
@@ -286,14 +305,14 @@ main {
     color: black;
 }
 
-.buttons .btn {
+.btn {
     background-color: var(--main-color);
     color: white;
     transition: all 0.5s ease;
     border: 2px solid transparent;
 }
 
-.buttons .btn:hover {
+.btn:hover {
     color: black;
     background-color: white;
     border: 2px solid var(--main-color);
@@ -302,20 +321,211 @@ main {
 /* About Section End */
 
 /* Service Section Start */
-.services-content .service{
-    transition: all .4s ;
+.services-content .service {
+    opacity: 0;
+
 }
-.services-content .service h5{
-    text-transform: uppercase ;
+
+.service.Sshow {
+    opacity: 1;
+}
+
+.services-content .service:nth-child(1) {
+    transition: opacity 0.4s ease-in-out, background-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.services-content .service:nth-child(2) {
+    transition: opacity 0.6s ease-in-out, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-content .service:nth-child(3) {
+    transition: opacity 0.8s ease-in-out, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-content .service:nth-child(4) {
+    transition: opacity 1s ease-in-out, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-content .service h5 {
+    text-transform: uppercase;
     font-weight: 600;
 }
-.services-content .service p{
+
+.services-content .service p {
     color: rgba(0, 0, 0, 0.7);
     padding: 0px 10px;
 }
-.services-content .service:hover{
-    background: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+.services-content .service:hover {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* Service Section End */
+
+/* Portfolio Section Start */
+.categories button {
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.categories button {
+    text-transform: uppercase;
+    transition: color 0.4s ease;
+}
+
+.categories button:hover {
+    color: var(--main-color) !important;
+}
+
+.categories button.active {
+    color: var(--main-color) !important;
+}
+
+.item {
+    width: 30%;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.item img {
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.item .overlay {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.714);
+    transition: opacity 0.5s ease;
+}
+
+.item:hover .overlay {
+    opacity: 1;
+}
+
+.item:hover img {
+    filter: blur(5px);
+    transform: scale(1.2);
+}
+
+.item .overlay i {
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.item .overlay i:hover {
+    color: #f1f1f1 !important;
+}
+
+/* Portfolio Section End */
+
+.stats-content {
+    font-weight: 500;
+}
+
+/* Stats Start*/
+.stats-content {
+    opacity: 0;
+
+}
+
+.stats-content.showStats {
+    opacity: 1;
+}
+
+.stats-container .stats-content:nth-child(1) {
+    transition: opacity 0.4s ease-in-out, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-container .stats-content:nth-child(2) {
+    transition: opacity 0.6s ease-in-out, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-container .stats-content:nth-child(3) {
+    transition: opacity 0.8s ease-in-out, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-container .stats-content:nth-child(4) {
+    transition: opacity 1s ease-in-out, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Stats End*/
+
+/* Testimonial Section Start */
+
+.feedback {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.content {
+    z-index: 2;
+    position: relative;
+}
+
+.feedback::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: -60%;
+    transform: rotate(130deg);
+    background: var(--main-color);
+    z-index: 1;
+}
+
+.feedback .img-frame{
+    width: 100px;
+    height: 100px;
+}
+.feedback .fa-star{
+    color: gold !important;
+    font-size: 14px;
+}
+
+/* Testimonial Section End */
+
+
+
+/* Blog Section Start */
+
+.blog a{
+    transition: color 0.3s ease;
+}
+
+.blog a:hover{
+    color: var(--main-color);
+}
+
+.blog{
+    transition: all 0.3s ease;
+    width: 350px;
+}
+
+.blog:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.01);
+}
+
+.blog .post-image{
+    max-height: 200px;
+    background-color: rgb(113, 12, 12);
+    overflow: hidden;
+}
+/* Blog Section End */
+
+input::placeholder,textarea::placeholder{
+    font-size: 14px;
+}
