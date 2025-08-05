@@ -1,4 +1,11 @@
-@media screen and (max-width:991px) {
+@media screen and (max-width:1200px) {
+
+    #Services .container {
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width:992px) {
     .about-image {
         border: none;
     }
@@ -22,39 +29,142 @@
     }
 
     #About .container {
-        max-width: 90% !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
-       #Services .container{
+
+    .about-text li {
+        width: 100%;
+    }
+
+    .about-text button {
+        margin: 10px 0px !important;
+        padding: 7px 15px !important;
+    }
+
+    #Services .container {
         max-width: 100% !important;
     }
+
+    .services-content .service {
+        width: 50% !important;
+        margin-bottom: 10px;
+    }
+
+    #Testimonial .container {
+        max-width: 100% !important;
+        padding: 0px;
+    }
+
+    .blogs{
+        flex-direction: column !important;
+        align-items: center;
+    }
+
 }
 
-@media screen and (max-width:870px) {
+@media screen and (max-width:768px) {
     .about-container {
         flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .about-image {
+        width: 75% !important;
+
     }
 
     #About .container {
-        max-width: 85% !important;
+        max-width: 75% !important;
     }
 
-    .about-text{
-        padding-top:20px  !important;
+    .about-text {
+        padding-top: 20px !important;
         margin: 0 !important;
     }
-    .about-text p{
+
+    .about-text p {
         padding: 0 !important;
     }
 
-    .about-text li{
+    .about-text li {
         width: 50%;
     }
-    .about-text button{
+
+    .item {
+        width: 45%;
+    }
+
+    .stats-container.container {
+        max-width: 100% !important;
+        gap: 5px !important;
+        flex-wrap: wrap !important;
+    }
+
+    .stats-content {
+        width: 40% !important;
+    }
+
+    .feedback {
+        width: 90% !important;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+
+    .about-text li {
         width: 100%;
-        margin: 10px;
+    }
+
+    .about-text button {
+        width: 100%;
+        margin: 5px 0px !important;
+    }
+
+    .services-content .service {
+        width: 100% !important;
+        margin: 10px 25px;
+    }
+
+    .item {
+        width: 100%;
+        margin: 0px 25px;
+    }
+
+    .stats-content h6 {
+        font-size: 20px !important;
+    }
+
+    .stats-content p {
+        font-size: 14px !important;
+    }
+
+    .stats-content {
+        width: 100% !important;
+    }
+
+    .feedback .content {
+        flex-direction: column !important
+    }
+
+    .feedback .img-content::after {
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        transform: translate(-40%, -65%) rotate(70deg);
+        background-color: var(--main-color);
+        z-index: 1;
     }
 
 
+    .contact-top {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .contact-top input{
+        width: 100% !important;
+    }
 }
